@@ -121,8 +121,8 @@ const Register = () => {
             <Form onSubmit={handleRegister}>
                 <Input ref={usernameRef} placeholder="Username"/>
                 <Input ref={emailRef} placeholder="Email"/>
-                <Input ref={passwordRef} placeholder="Password"/>
-                <Input ref={confirmPasswordRef} placeholder="Confirm Password"/>
+                <Input type='password' ref={passwordRef} placeholder="Password"/>
+                <Input type='password' ref={confirmPasswordRef} placeholder="Confirm Password"/>
                 <PrivacyStatement> By signing up, I agree to my personal data being processed in compliance with the <NavPill>PRIVACY POLICY </NavPill></PrivacyStatement>
                 <Button disabled={isLoading} onClick={handleRegister} type="submit">Create Account</Button>
                 {error && <Error> {error} </Error>}
