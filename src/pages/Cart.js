@@ -191,7 +191,7 @@ const Cart = () => {
             //save to db
             try{
                 const orderData = {products: cart.cartProducts, ...shippingDetails, amount: cart.totalPrice, shipTo: shippingDetails.name, address: shippingDetails.address}
-                const res = await fetch(`${process.env.REACT_APP_BACKEND_URL}/orders`, {
+                const res = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/orders`, {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",

@@ -8,7 +8,7 @@ export const useOnRegister = () => {
     const onRegister = async ({username, email, password}) => {
         try{
             setIsLoading(true);
-            const res = await fetch(`${process.env.REACT_APP_BACKEND_URL}/auth/signup`, {
+            const res = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/auth/signup`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

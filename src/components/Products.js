@@ -30,7 +30,7 @@ const Products = ({category, filters, sortBy, maxNums, showHeading}) => {
     const getProducts = async () => {
       try{
         // fetch category wise products or all products
-        const res = await fetch(category ? `${process.env.REACT_APP_BACKEND_URL}/products?category=${category}` : `${process.env.REACT_APP_BACKEND_URL}/products`);
+        const res = await fetch(category ? `${process.env.REACT_APP_BACKEND_URL}/api/products?category=${category}` : `${CT_APP_BACKEND_URL}/api/products`);
         if(res.ok){
           const fetchedProducts = await res.json();
           setProducts(fetchedProducts);

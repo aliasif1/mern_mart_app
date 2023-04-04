@@ -59,7 +59,7 @@ const Profile = () => {
     useEffect(() => {
         const getProfile = async () =>{
             try{
-                const res = await fetch(`${process.env.REACT_APP_BACKEND_URL}/users/${user.id}`, {
+                const res = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/users/${user.id}`, {
                     headers: {
                         "authorization": 'Bearer ' + user.token
                     },
@@ -78,7 +78,7 @@ const Profile = () => {
     
     const deleteAccount = async () => {
         try{
-            const res = await fetch(`${process.env.REACT_APP_BACKEND_URL}/users/${user.id}`, {
+            const res = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/users/${user.id}`, {
                 method: "delete",
                 headers: {
                     "authorization": 'Bearer ' + user.token

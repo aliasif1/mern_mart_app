@@ -43,7 +43,7 @@ const Orders = () => {
     useEffect(() => {
         const getOrders = async () =>{
             try{
-                const res = await fetch(`${process.env.REACT_APP_BACKEND_URL}/orders/find/${user.id}`, {
+                const res = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/orders/find/${user.id}`, {
                     headers: {
                         "authorization": 'Bearer ' + user.token
                     },

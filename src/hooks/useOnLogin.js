@@ -8,7 +8,7 @@ export const useOnLogin = () => {
     const onLogin = async ({email, password}) => {
         try{
             setIsLoading(true);
-            const res = await fetch(`${process.env.REACT_APP_BACKEND_URL}/auth/login`, {
+            const res = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/auth/login`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
