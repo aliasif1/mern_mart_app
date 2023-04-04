@@ -10,7 +10,7 @@ import { useCartContext } from '../hooks/useCartContext'
 const Container = styled.div`
     padding: 20px;
     display: flex;
-    height: 90vh;
+    height: 100vh;
     ${Mobile({padding: "10px 10px", height: "90vh", flexDirection: "column"})}
 `
 const ImageContainer = styled.div`

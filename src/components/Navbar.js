@@ -19,7 +19,7 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    ${Mobile({padding: "10px 0px"})}
+    ${Mobile({padding: "10px 10px"})}
 `
 const Left = styled.div`
     flex: 1;
