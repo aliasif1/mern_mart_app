@@ -10,7 +10,7 @@ An ecommerce shopping application built with MERN stack technology.
     - React
     - Express
     - Node
-    - Mongoose
+    - MongoDB
 
 ## Features
 - Responsive Design
@@ -19,3 +19,5 @@ An ecommerce shopping application built with MERN stack technology.
 - Multiple Routes
 - Products Filtering
 - Past orders history
+
+#### Images taken from [unsplash](https://unsplash.com/)
